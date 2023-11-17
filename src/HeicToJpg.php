@@ -15,51 +15,51 @@ class HeicToJpg {
      *
      * @var string
      */
-    private string $jpg;
+    private $jpg;
 
     /**
      * Stores original HEIC image path
      *
      * @var string
      */
-    protected string $heic;
+    protected $heic;
 
     /**
      * Executable file name from bin folder
      *
      * @var string
      */
-    protected string $exeName = "heicToJpg";
+    protected $exeName = "heicToJpg";
 
     /**
      * OS of server
      *
      * @var string
      */
-    protected string $os = "linux";
+    protected $os = "linux";
 
     /**
      * Architecture of server
      *
      * @var string
      */
-    protected string $arch = "amd64";
+    protected $arch = "amd64";
 
     /**
      * Force arm64
      *
      * @var bool
      */
-    protected bool $forceArm = false;
+    protected $forceArm = false;
 
     /**
      * Location of the "heif-converter-image" package's executable
      * 
      * @var string
      */
-    protected string $libheifConverterLocation = "";
+    protected $libheifConverterLocation = "";
 
-    protected string $libheifOutput = "";
+    protected $libheifOutput = "";
 
     /**
      * Takes full location of file as a string
